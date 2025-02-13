@@ -1,0 +1,5 @@
+lightmanager: lightswitch.c
+	gcc -o lightmanager lightswitch.c
+
+run:
+	./lightmanager

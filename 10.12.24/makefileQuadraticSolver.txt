@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -Wall -std=c99 -lm
+TARGET = quadratic_solver
+
+all: $(TARGET)
+
+$(TARGET): main.o quadraticroots.o
+	$(CC) $(CFLAGS) -o $(TARGET) main.o quadraticroots.o
+
+main.o: main.c quadraticroots.h
+	$(CC) $(CFLAGS) -c main.c
+
+quadraticroots.o: quadraticroots.c quadraticroots.h
+	$(CC) $(CFLAGS) -c quadraticroots.c
+clean:
+	del /f /q *.o *.exe $(TARGET)

@@ -1,0 +1,5 @@
+gcc -E zad1.c -o preprocessed1.c
+gcc -S zad2.c -o assembly2.s
+gcc -c transformation.c -o transformation.o
+gcc main.c transformation.o -o main_program
+gcc zad4.c -o program4 -lm

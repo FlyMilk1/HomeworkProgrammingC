@@ -1,0 +1,7 @@
+For full compilation:
+make
+Commands for different functions:
+./safeadd 10 20
+./safesubtract 30 15
+./safemultiply 5 6
+./safedivide 40 8
